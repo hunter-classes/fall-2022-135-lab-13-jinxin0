@@ -7,5 +7,8 @@
 int main()
 {
     PRINTLN(printRange(-2, 10));
+
+    PRINTLN(sumRange(1, 3));
+    PRINTLN(sumRange(-2, 10));
     return 0;
 }
