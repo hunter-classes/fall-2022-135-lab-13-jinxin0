@@ -33,3 +33,12 @@ bool isAlphanumeric(std::string s)
     s.pop_back();
     return isAlphanumeric(s);
 }
+
+bool nestedParens(std::string s)
+{
+    if (s.empty())
+        return true;
+    if (!(s.front() == '(' && s.back() == ')'))
+        return false;
+    return nestedParens(s.substr(1, s.size() - 2));
+}

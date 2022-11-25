@@ -30,3 +30,14 @@ TEST_CASE("Task D")
     CHECK(isAlphanumeric("Abcd1234xyz") == true);
     CHECK(isAlphanumeric("KLMN 8-7-6") == false);
 }
+
+TEST_CASE("Task E")
+{
+    CHECK(nestedParens("((()))") == true);
+    CHECK(nestedParens("()") == true);
+    CHECK(nestedParens("") == true);
+    CHECK(nestedParens("(((") == false);
+    CHECK(nestedParens("(()") == false);
+    CHECK(nestedParens(")(") == false);
+    CHECK(nestedParens("a(b)c") == false);
+}

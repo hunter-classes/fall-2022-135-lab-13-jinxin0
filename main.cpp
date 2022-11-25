@@ -18,5 +18,13 @@ int main()
 
     PRINTLN(std::boolalpha << isAlphanumeric("hello world"));
     PRINTLN(std::boolalpha << isAlphanumeric("helloworld"));
+
+    PRINTLN(std::boolalpha << nestedParens("((()))"));
+    PRINTLN(std::boolalpha << nestedParens("()"));
+    PRINTLN(std::boolalpha << nestedParens(""));
+    PRINTLN(std::boolalpha << nestedParens("((("));
+    PRINTLN(std::boolalpha << nestedParens("(()"));
+    PRINTLN(std::boolalpha << nestedParens(")("));
+    PRINTLN(std::boolalpha << nestedParens("a(b)c"));
     return 0;
 }
