@@ -15,5 +15,8 @@ int main()
     int arr1[] = {-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     PRINTLN(sumArray(arr, std::size(arr)));
     PRINTLN(sumArray(arr1, std::size(arr1)));
+
+    PRINTLN(std::boolalpha << isAlphanumeric("hello world"));
+    PRINTLN(std::boolalpha << isAlphanumeric("helloworld"));
     return 0;
 }

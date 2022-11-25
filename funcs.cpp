@@ -1,3 +1,5 @@
+#include <cctype>
+
 #include "funcs.h"
 
 std::string printRange(int left, int right)
@@ -20,4 +22,14 @@ int sumArray(int *arr, int size)
         return 0;
 
     return arr[--size] + sumArray(arr, size);
+}
+
+bool isAlphanumeric(std::string s)
+{
+    if (s.empty())
+        return true;
+    if (!std::isalnum(s.back()))
+        return false;
+    s.pop_back();
+    return isAlphanumeric(s);
 }

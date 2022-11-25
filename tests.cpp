@@ -21,3 +21,12 @@ TEST_CASE("Task C")
     CHECK(sumArray(arr, std::size(arr)) == 6);
     CHECK(sumArray(arr1, std::size(arr1)) == 52);
 }
+
+TEST_CASE("Task D")
+{
+    CHECK(isAlphanumeric("hello world") == false);
+    CHECK(isAlphanumeric("helloworld") == true);
+    CHECK(isAlphanumeric("ABCD") == true);
+    CHECK(isAlphanumeric("Abcd1234xyz") == true);
+    CHECK(isAlphanumeric("KLMN 8-7-6") == false);
+}
