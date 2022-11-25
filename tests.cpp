@@ -13,3 +13,11 @@ TEST_CASE("Task B")
     CHECK(sumRange(1, 3) == 6);
     CHECK(sumRange(-2, 10) == 52);
 }
+
+TEST_CASE("Task C")
+{
+    int arr[] = {1, 2, 3};
+    int arr1[] = {-2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+    CHECK(sumArray(arr, std::size(arr)) == 6);
+    CHECK(sumArray(arr1, std::size(arr1)) == 52);
+}
